@@ -1,35 +1,46 @@
-# 👋 Hi, I'm Kamil
+# Kamil Michna
 
-💻 Full-stack developer passionate about building scalable web applications with **Node.js**, **Angular**, **React**, and **AWS**.  
-I love turning complex ideas into clean, performant, and maintainable systems.
-
----
-
-### 🚀 Tech Stack
-
-**Frontend:**  
-🅰️ Angular • ⚛️ React • TailwindCSS • TypeScript  
-
-**Backend:**  
-🟢 Node.js • Express / NestJS • REST & GraphQL APIs  
-
-**Cloud / DevOps:**  
-☁️ AWS (EC2, S3, Lambda, RDS) 
-
-**Database:**  
-🗄 PostgreSQL • MongoDB  
+Fullstack engineer (Angular · Node.js · AWS) building SaaS tools and serverless architectures.  
+5× AWS Certified — including **Solutions Architect Professional** and **AI Practitioner**.
 
 ---
 
-### 💡 What I’m Into
-- Architecting reliable and efficient backend systems  
-- Building modern, responsive UIs  
-- Automating infrastructure and deployments on AWS  
-- Exploring new web tech and frameworks  
+## Currently building
+
+| Project | What it does | Stack |
+|---|---|---|
+| [**Stone Vision**](https://sellstone.app) | AI-powered stone slab visualizer for showrooms | Next.js · AWS Lambda · Flux AI
+| **sdd-ui** | Universal spec viewer for Spec-Driven Development | Fastify · React · Tree-sitter |
 
 ---
 
-### 🎯 Current Focus
-- Scaling full-stack apps using Angular + Node + AWS  
-- Improving architecture, performance, and developer experience  
-- Learning and experimenting with React and Next.js
+## Tech stack
+
+**Frontend** — Angular (Signals, RxJS, zoneless), React, Next.js, TypeScript, TailwindCSS  
+**Backend** — Node.js, NestJS, Express, REST & GraphQL, PostgreSQL, Supabase  
+**Cloud** — AWS (Lambda, S3, CloudFront, RDS, EC2, API Gateway, CDK), serverless-first
+**AI/ML** — Vercel AI SDK
+
+---
+
+## AWS Certifications
+
+- Solutions Architect – Professional
+- AI Practitioner
+- Developer – Associate
+- Solutions Architect – Associate
+- Cloud Practitioner
+
+[Verify on Credly →](https://www.credly.com/users/kamil-michna)
+
+---
+
+## Selected repos
+
+- [`nodejsAngularPostgrePubSub`](https://github.com/kamilmichna/nodejsAngularPostgrePubSub) — Real-time pub/sub with PostgreSQL LISTEN/NOTIFY, SSE and Angular
+- [`llmHub`](https://github.com/kamilmichna/llmHub) — LLM gateway with multi-provider routing (OpenAI, Anthropic, Mistral)
+- [`angular-signal-forms`](https://github.com/kamilmichna/angular-signal-forms) — Reactive forms built on Angular Signals with type-safe validation
+
+---
+
+**Remote · Krosno, Poland · [LinkedIn](https://linkedin.com/in/kamilmichna)**
