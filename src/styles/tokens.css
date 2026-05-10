@@ -1,0 +1,244 @@
+/* Terminal Monolith Design Tokens */
+:root {
+  /* Colors */
+  --color-surface: #131314;
+  --color-surface-dim: #131314;
+  --color-surface-bright: #393939;
+  --color-surface-container-lowest: #0d0e0e;
+  --color-surface-container-low: #1b1c1c;
+  --color-surface-container: #1f2020;
+  --color-surface-container-high: #292a2a;
+  --color-surface-container-highest: #343535;
+  --color-on-surface: #e4e2e2;
+  --color-on-surface-variant: #c4c7c8;
+  --color-inverse-surface: #e4e2e2;
+  --color-inverse-on-surface: #303031;
+  --color-outline: #8e9192;
+  --color-outline-variant: #444748;
+  --color-surface-tint: #c6c6c7;
+  --color-primary: #ffffff;
+  --color-on-primary: #2f3131;
+  --color-primary-container: #e2e2e2;
+  --color-on-primary-container: #636565;
+  --color-inverse-primary: #5d5f5f;
+  --color-secondary: #c9c6c5;
+  --color-on-secondary: #313030;
+  --color-secondary-container: #4a4949;
+  --color-on-secondary-container: #bab8b7;
+  --color-tertiary: #ffffff;
+  --color-on-tertiary: #313030;
+  --color-tertiary-container: #e5e2e1;
+  --color-on-tertiary-container: #656464;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-background: #131314;
+  --color-on-background: #e4e2e2;
+  --color-surface-variant: #343535;
+
+  /* Semantic aliases */
+  --color-border: #333333;
+  --color-border-hover: #555555;
+  --color-bg-hover: #0D0D0D;
+  --color-info: #8e9192;
+  --color-success: #e4e2e2;
+  --color-warning: #e4e2e2;
+
+  /* Typography */
+  --font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --font-headline-lg-size: 24px;
+  --font-headline-lg-weight: 700;
+  --font-headline-lg-line-height: 32px;
+  --font-headline-lg-letter-spacing: -0.02em;
+
+  --font-headline-md-size: 20px;
+  --font-headline-md-weight: 700;
+  --font-headline-md-line-height: 28px;
+  --font-headline-md-letter-spacing: -0.01em;
+
+  --font-body-lg-size: 16px;
+  --font-body-lg-weight: 400;
+  --font-body-lg-line-height: 24px;
+
+  --font-body-md-size: 14px;
+  --font-body-md-weight: 400;
+  --font-body-md-line-height: 20px;
+
+  --font-code-sm-size: 12px;
+  --font-code-sm-weight: 400;
+  --font-code-sm-line-height: 18px;
+
+  --font-label-caps-size: 11px;
+  --font-label-caps-weight: 700;
+  --font-label-caps-line-height: 16px;
+  --font-label-caps-letter-spacing: 0.05em;
+
+  /* Spacing */
+  --space-unit: 4px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-gutter: 1px;
+
+  /* Border Radius */
+  --radius: 0px;
+}
+
+/* Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-body-md-size);
+  line-height: var(--font-body-md-line-height);
+  font-weight: var(--font-body-md-weight);
+  color: var(--color-on-surface);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family);
+  font-weight: var(--font-headline-md-weight);
+  line-height: var(--font-headline-md-line-height);
+  color: var(--color-on-surface);
+}
+
+h1 {
+  font-size: var(--font-headline-lg-size);
+  font-weight: var(--font-headline-lg-weight);
+  line-height: var(--font-headline-lg-line-height);
+  letter-spacing: var(--font-headline-lg-letter-spacing);
+}
+
+h2 {
+  font-size: var(--font-headline-md-size);
+  font-weight: var(--font-headline-md-weight);
+  line-height: var(--font-headline-md-line-height);
+  letter-spacing: var(--font-headline-md-letter-spacing);
+}
+
+h3 {
+  font-size: var(--font-body-lg-size);
+  font-weight: var(--font-headline-md-weight);
+  line-height: var(--font-body-lg-line-height);
+}
+
+p {
+  font-size: var(--font-body-md-size);
+  font-weight: var(--font-body-md-weight);
+  line-height: var(--font-body-md-line-height);
+}
+
+small {
+  font-size: var(--font-code-sm-size);
+  font-weight: var(--font-code-sm-weight);
+  line-height: var(--font-code-sm-line-height);
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+  font-size: var(--font-code-sm-size);
+  font-weight: var(--font-code-sm-weight);
+  line-height: var(--font-code-sm-line-height);
+}
+
+/* Label Caps (uppercase headers) */
+.label-caps {
+  font-family: var(--font-family);
+  font-size: var(--font-label-caps-size);
+  font-weight: var(--font-label-caps-weight);
+  line-height: var(--font-label-caps-line-height);
+  letter-spacing: var(--font-label-caps-letter-spacing);
+  text-transform: uppercase;
+}
+
+/* Links */
+a {
+  color: var(--color-on-surface);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Inputs */
+input, textarea, select {
+  font-family: var(--font-family);
+  font-size: var(--font-body-md-size);
+  font-weight: var(--font-body-md-weight);
+  color: var(--color-on-surface);
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0 var(--space-md);
+  height: 40px;
+  outline: none;
+  transition: border-color 0.1s ease;
+}
+
+input:hover, textarea:hover, select:hover {
+  border-color: var(--color-border-hover);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-primary);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-outline);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-outline);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
