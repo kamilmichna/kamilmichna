@@ -11,7 +11,6 @@ Fullstack engineer (Angular · Node.js · AWS) building SaaS tools and serverles
 |---|---|---|
 | https://aws-kurs.vercel.app | Free AWS Certified Practitioner interactive course | Next.js |
 | [**Stone Vision**](https://sellstone.app) | AI-powered stone slab visualizer for showrooms | Next.js · Flux AI
-| **sdd-ui** | Universal spec viewer for Spec-Driven Development | Fastify · React · Tree-sitter |
 
 ---
 
